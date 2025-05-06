@@ -2,7 +2,10 @@
   <header
     class="flex justify-between items-center p-6 bg-opacity-50 relative z-20"
   >
-    <div class="text-white text-3xl font-bold">MARTIN DOBRUDZHANSKI</div>
+    <div class="text-white text-3xl font-bold">
+      MARTIN DOBRUDZHANSKI
+      <img class="h-20" src="@/assets/logo.png" alt="logo" />
+    </div>
     <!-- Mobile Toggle Button -->
     <div class="md:hidden z-30">
       <button

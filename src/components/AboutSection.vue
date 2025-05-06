@@ -50,7 +50,7 @@
         </h2>
         <p class="text-base lg:text-lg mt-8 py-8">
           "Hi, I'm a software developer passionate about creating clean and
-          efficient code that solves real-world problems. With 3 years of
+          efficient code that solves real-world problems. With 3+ years of
           experience in front-end development, I specialize in building
           user-friendly web applications using JavaScript, Vue.js, and React.
           I've worked on projects ranging from MVPs for startups to enterprise
@@ -71,7 +71,7 @@
             class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3"
           >
             <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">
-              +12
+              +10
             </h3>
             <p class="text-sm sm:text-base text-gray-300">Project</p>
           </div>

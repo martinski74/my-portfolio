@@ -146,12 +146,12 @@ const Projects = ref([
   },
   {
     id: 5,
-    category: 'web development',
-    image: 'src/assets/project.png',
-    title: 'project 1',
+    category: 'js back-end',
+    image: 'src/assets/movie.png',
+    title: 'magic movies',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-    technologies: ['vue.js 3', 'vuex', 'Express'],
+    technologies: ['MongoDB', 'Handlebars', 'Express'],
     gitURL: '',
     webURL: '',
   },
