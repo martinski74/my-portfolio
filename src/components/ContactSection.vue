@@ -24,7 +24,7 @@
                 justify-content: center;
                 border-radius: 50%;
                 overflow: hidden;
-                border: 1px solid#111a3e;
+                border: 1px solid #111a3e;
                 backdrop-filter: blur(9px);
                 -webkit-backdrop-filter: blur(9px);
               "
@@ -165,14 +165,14 @@
           </div>
           <div v-if="error" class="text-red-500 mb-4">{{ error }}</div>
           <div v-if="success" class="text-green-500 mb-4">
-            Съобщението е изпратено успешно!
+            Your message has been sent successfully!
           </div>
           <button
             type="submit"
             :disabled="loading"
             class="z-1 w-[100%!important] px-6 md:px-7 py-3 rounded-full sm:w-max flex justify-center text-white bg-primary border-2 border-transparent disabled:opacity-50"
           >
-            {{ loading ? 'Изпращане...' : 'Изпрати съобщение' }}
+            {{ loading ? 'Sending...' : 'SEND' }}
           </button>
         </form>
       </div>

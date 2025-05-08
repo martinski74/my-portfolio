@@ -9,7 +9,7 @@
         class="px-4 sm:py-16 xl:pr-16 grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
         data-aos="fade-right"
       >
-        <div v-for="project in Projects" :key="project.id">
+        <li v-for="project in Projects" :key="project.id">
           <div
             class="h-52 md:h-[24rem] rounded-t-xl relative group"
             :style="{
@@ -39,8 +39,10 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
-                  ></path></svg></a
-              ><a
+                  ></path>
+                </svg>
+              </a>
+              <a
                 class="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
                 :href="project.webURL"
                 target="_blank"
@@ -64,8 +66,9 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
-                  ></path></svg
-              ></a>
+                  ></path>
+                </svg>
+              </a>
             </div>
           </div>
           <div
@@ -91,7 +94,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </li>
       </ul>
     </div>
   </section>
@@ -106,7 +109,7 @@ const Projects = ref([
     image: 'src/assets/chat-firebase.png',
     title: 'Chat App',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
+      'A real-time chat application built with Vue.js 3 and Firebase. Features include user authentication, real-time messaging. Multiple users can log in together and chat with each other in real-time.',
     technologies: ['vue.js 3', 'Firebase'],
     gitURL: 'https://github.com/martinski74/chat-firebas-vue',
     webURL: 'https://firechat-vue-86f94.firebaseapp.com/',
@@ -117,7 +120,7 @@ const Projects = ref([
     image: 'src/assets/food-react.png',
     title: 'Food recipies ',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
+      'A comprehensive food recipe platform developed with React.js. Users can browse, search,create, edit, delete, recommend and save recipes. The application uses Express for the backend and MongoDB for data storage.',
     technologies: ['React.js', 'Express', 'MongoDB'],
     gitURL: 'https://github.com/martinski74/food-recipes-react',
     webURL: 'https://food-recipes-client.netlify.app/',
@@ -128,7 +131,7 @@ const Projects = ref([
     image: 'src/assets/github.jpeg',
     title: 'github search',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
+      'A GitHub user search application built with Vue.js 2. Users can search for GitHub profiles, view repositories, and get detailed information about GitHub users.',
     technologies: ['vue.js 2', 'vuex'],
     gitURL: 'https://github.com/martinski74/app-github-search',
     webURL: 'https://github-search-vue.netlify.app/',
@@ -139,10 +142,10 @@ const Projects = ref([
     image: 'src/assets/green.png',
     title: 'Green blog',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
+      'A blog platform focused on environmental topics. Built with Vue.js 3 and Pinia for state management. Features include user authentication, create, edit, and delete blog posts functionality. Users can enjoy background music while browsing through the blog posts.',
     technologies: ['vue.js 3', 'Pinia', 'Express'],
     gitURL: 'https://github.com/martinski74/green-blog-vue',
-    webURL: 'https://green-blog-51a21.web.app/home',
+    webURL: 'https://green-blog-vue.netlify.app/',
   },
   {
     id: 5,
@@ -150,10 +153,10 @@ const Projects = ref([
     image: 'src/assets/movie.png',
     title: 'magic movies',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
+      'A movie database application. Built with Express and Handlebars, featuring user authentication and movie recommendations. Users can create, edit, and delete their own movie lists.',
     technologies: ['MongoDB', 'Handlebars', 'Express'],
-    gitURL: '',
-    webURL: '',
+    gitURL: 'https://github.com/martinski74/magic-movies',
+    webURL: 'https://magic-movies.onrender.com/',
   },
   {
     id: 6,
@@ -161,8 +164,8 @@ const Projects = ref([
     image: 'src/assets/mobile.jpg',
     title: 'project 1',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur quasi ipsam labore sapiente, accusamus necessitatibus laboriosam non voluptas inventore deserunt dolore modi ex, praesentium at provident nihil magni ratione!',
-    technologies: ['vue.js 3', 'vuex', 'Express'],
+      'A mobile application project showcasing responsive design and cross-platform compatibility. Features include user authentication and real-time data updates.',
+    technologies: [],
     gitURL: '',
     webURL: '',
   },

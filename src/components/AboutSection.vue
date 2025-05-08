@@ -95,7 +95,7 @@ const education = ref([
   {
     id: 1,
     School: 'SoftUni',
-    program: 'Software Engineer, JS Web Developer',
+    program: 'JS Web Developer',
     year: '2016 - 2017',
   },
   {

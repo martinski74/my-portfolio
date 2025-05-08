@@ -24,11 +24,11 @@
                 class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-pink-500"
               >
                 Martin </span
-              >😁
+              >👋
             </h1>
           </div>
           <p
-            class="text-gray-300 pt-8 text-center lg:text-left mx-auto max-w-xl"
+            class="text-gray-200 pt-8 text-center lg:text-left mx-auto max-w-xl"
           >
             "I am actively seeking new opportunities to grow as a Web Developer.
             Passionate about building modern, user-friendly applications, I aim

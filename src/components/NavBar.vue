@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex justify-between items-center p-6 bg-opacity-50 relative z-20"
+    class="flex justify-between items-start p-6 bg-opacity-50 relative z-20"
   >
     <div class="text-white text-3xl font-bold">
       MARTIN DOBRUDZHANSKI
