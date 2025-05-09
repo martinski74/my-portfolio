@@ -14,21 +14,7 @@
         </p>
         <div class="col-lg-4 col-md-4 mb-lg-0 mt-5">
           <div class="flex mb-10 items-center">
-            <div
-              class="p-2"
-              style="
-                background: #111a3e;
-                width: 50px;
-                height: 46px;
-                display: flex;
-                justify-content: center;
-                border-radius: 50%;
-                overflow: hidden;
-                border: 1px solid #111a3e;
-                backdrop-filter: blur(9px);
-                -webkit-backdrop-filter: blur(9px);
-              "
-            >
+            <div class="p-2" :style="socialStyles">
               <img
                 src="https://img.icons8.com/metro/50/ffffff/new-post.png"
                 alt="new-post"
@@ -41,21 +27,7 @@
             </div>
           </div>
           <div class="flex mb-10 items-center">
-            <div
-              class="p-2"
-              style="
-                background: #111a3e;
-                width: 50px;
-                height: 46px;
-                display: flex;
-                justify-content: center;
-                border-radius: 50%;
-                overflow: hidden;
-                border: 1px solid#111a3e;
-                backdrop-filter: blur(9px);
-                -webkit-backdrop-filter: blur(9px);
-              "
-            >
+            <div class="p-2" :style="socialStyles">
               <img
                 src="https://img.icons8.com/ios-filled/50/ffffff/phone.png"
                 alt="phone"
@@ -68,21 +40,7 @@
             </div>
           </div>
           <div class="flex mb-10 items-center">
-            <div
-              class="p-2"
-              style="
-                background: #111a3e;
-                width: 50px;
-                height: 46px;
-                display: flex;
-                justify-content: center;
-                border-radius: 50%;
-                overflow: hidden;
-                border: 1px solid#111a3e;
-                backdrop-filter: blur(9px);
-                -webkit-backdrop-filter: blur(9px);
-              "
-            >
+            <div class="p-2" :style="socialStyles">
               <img
                 src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png"
                 alt="linkedin"
@@ -96,6 +54,24 @@
                 href="https://www.linkedin.com/in/martin-dobrudzhanski-9bb821137/"
                 target="_blank"
                 >My LinkedIn profile</a
+              >
+            </div>
+          </div>
+          <div class="flex mb-0 items-center">
+            <div class="p-2">
+              <img
+                src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+                alt="linkedin"
+                class="w-6"
+              />
+            </div>
+            <div class="ml-5 text-white">
+              <h4>GitHub</h4>
+              <a
+                class="text-white hover:text-[#bba5d4] transition duration-300"
+                href="https://github.com/martinski74"
+                target="_blank"
+                >My GitHub profile</a
               >
             </div>
           </div>
@@ -184,7 +160,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, reactive } from 'vue';
 import emailjs from '@emailjs/browser';
 
 const form = ref({
@@ -196,6 +172,18 @@ const form = ref({
 const loading = ref(false);
 const success = ref(false);
 const error = ref('');
+const socialStyles = reactive({
+  background: '#2c3865',
+  width: '50px',
+  height: '46px',
+  display: 'flex',
+  justifyContent: 'center',
+  borderRadius: '50%',
+  overflow: 'hidden',
+  border: '1px solid #111a3e',
+  backdropFilter: 'blur(9px)',
+  WebkitBackdropFilter: 'blur(9px)',
+});
 
 const sendEmail = async (e) => {
   loading.value = true;
@@ -203,14 +191,14 @@ const sendEmail = async (e) => {
 
   try {
     await emailjs.send(
-      'service_r6w8kve', // Заменете с вашия Service ID от EmailJS
-      'template_noue6st', // Заменете с вашия Template ID от EmailJS
+      'service_r6w8kve', // Service ID от EmailJS
+      'template_noue6st', // Template ID от EmailJS
       {
         from_email: form.value.email,
         subject: form.value.subject,
         message: form.value.message,
       },
-      'lQUjj_qRZHVbU5cHu' // Заменете с вашия Public Key от EmailJS
+      'lQUjj_qRZHVbU5cHu' // Public Key от EmailJS
     );
 
     success.value = true;

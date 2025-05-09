@@ -50,7 +50,7 @@
         </h2>
         <p class="text-base lg:text-lg mt-8 py-8">
           "Hi, I'm a software developer passionate about creating clean and
-          efficient code that solves real-world problems. With 3+ years of
+          efficient code that solves real-world problems. With 4+ years of
           experience in front-end development, I specialize in building
           user-friendly web applications using JavaScript, Vue.js, and React.
           I've worked on projects ranging from MVPs for startups to enterprise

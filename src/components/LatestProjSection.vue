@@ -156,17 +156,17 @@ const Projects = ref([
       'A movie database application. Built with Express and Handlebars, featuring user authentication and movie recommendations. Users can create, edit, and delete their own movie lists.',
     technologies: ['MongoDB', 'Handlebars', 'Express'],
     gitURL: 'https://github.com/martinski74/magic-movies',
-    webURL: 'https://magic-movies.onrender.com/',
+    webURL: 'https://magic-movies.up.railway.app/',
   },
   {
     id: 6,
     category: 'Mobile App',
-    image: 'src/assets/mobile.jpg',
-    title: 'project 1',
+    image: 'src/assets/chat.png',
+    title: 'Funny chatbot',
     description:
       'A mobile application project showcasing responsive design and cross-platform compatibility. Features include user authentication and real-time data updates.',
-    technologies: [],
-    gitURL: '',
+    technologies: ['Vue.js', 'Express'],
+    gitURL: 'https://github.com/martinski74/funny-chatbot',
     webURL: '',
   },
 ]);
