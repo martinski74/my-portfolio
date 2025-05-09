@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "about": "About Me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "role": "Full Stack Developer",
+    "description": "I am actively seeking new opportunities to grow as a Web Developer. Passionate about building modern, user-friendly applications, I aim to contribute my skills while continuously learning and advancing in this dynamic field.",
+    "hireMe": "Hire Me"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Hi, I'm a software developer passionate about creating clean and efficient code that solves real-world problems. With 4+ years of experience in front-end development, I specialize in building user-friendly web applications using JavaScript, Vue.js, and React. I've worked on projects ranging from MVPs for startups to enterprise tools, always focusing on delivering a seamless user experience. In my free time, I play sports, read technical literature, and travel :) Check out my portfolio to see how I bring ideas to life through code!",
+    "downloadCV": "Download CV",
+    "education": "My Education",
+    "more": "More",
+    "about": "About",
+    "me": "Me",
+    "projects": "Projects",
+    "experience": "Years Experience"
+  },
+  "skills": {
+    "title": "Skills",
+    "my": "My",
+    "skills": "Skills",
+    "experience": "My Experience",
+    "frontend": "Frontend Development",
+    "backend": "Backend Development",
+    "tools": "Tools & Others"
+  },
+  "projects": {
+    "title": "My Latest Projects",
+    "chatApp": {
+      "title": "Chat App",
+      "description": "A real-time chat application built with Vue.js 3 and Firebase. Features include user authentication, real-time messaging. Multiple users can log in together and chat with each other in real-time."
+    },
+    "foodRecipes": {
+      "title": "Food recipes",
+      "description": "A comprehensive food recipe platform developed with React.js. Users can browse, search, create, edit, delete, recommend and save recipes. The application uses Express for the backend and MongoDB for data storage."
+    },
+    "githubSearch": {
+      "title": "GitHub search",
+      "description": "A GitHub user search application built with Vue.js 2. Users can search for GitHub profiles, view repositories, and get detailed information about GitHub users."
+    },
+    "greenBlog": {
+      "title": "Green blog",
+      "description": "A blog platform focused on environmental topics. Built with Vue.js 3 and Pinia for state management. Features include user authentication, create, edit, and delete blog posts functionality. Users can enjoy background music while browsing through the blog posts."
+    },
+    "magicMovies": {
+      "title": "Magic movies",
+      "description": "A movie database application. Built with Express and Handlebars, featuring user authentication and movie recommendations. Users can create, edit, and delete their own movie lists."
+    },
+    "funnyChatbot": {
+      "title": "Funny chatbot",
+      "description": "A mobile application project showcasing responsive design and cross-platform compatibility. Features include user authentication and real-time data updates."
+    }
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "description": "I'm open to new opportunities, collaborations, or just a tech chat. Feel free to reach out—I'd love to hear from you!",
+    "email": "Email",
+    "phone": "Phone",
+    "linkedin": "My LinkedIn profile",
+    "github": "My GitHub profile",
+    "subject": "Subject",
+    "message": "Message",
+    "emailPlaceholder": "email@gmail.com",
+    "subjectPlaceholder": "subject",
+    "messagePlaceholder": "Let's talk about ...",
+    "send": "SEND",
+    "sending": "Sending...",
+    "success": "Your message has been sent successfully!",
+    "error": "Error sending message. Please try again."
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "madeWith": "Made with"
+  }
+} 

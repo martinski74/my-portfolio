@@ -1,7 +1,7 @@
 <template>
   <section class="text-white mt-20" id="contact">
     <h2 class="text-4xl font-bold text-white text-left mb-4 px-4 xl:pl-16">
-      Let's Connect
+      {{ $t('contact.title') }}
     </h2>
     <div
       class="grid md:grid-cols-2 gap-4 relative px-4 xl:px-16 mt-8"
@@ -9,8 +9,7 @@
     >
       <div>
         <p class="text-[#adb7be]">
-          I'm open to new opportunities, collaborations, or just a tech chat.
-          Feel free to reach out—I'd love to hear from you!
+          {{ $t('contact.description') }}
         </p>
         <div class="col-lg-4 col-md-4 mb-lg-0 mt-5">
           <div class="flex mb-10 items-center">
@@ -22,7 +21,7 @@
               />
             </div>
             <div class="ml-5 text-white">
-              <h4>Email</h4>
+              <h4>{{ $t('contact.email') }}</h4>
               <p>martin.dobr45@gmail.com</p>
             </div>
           </div>
@@ -35,7 +34,7 @@
               />
             </div>
             <div class="ml-5 text-white">
-              <h4>Phone</h4>
+              <h4>{{ $t('contact.phone') }}</h4>
               <p>+359 885833003</p>
             </div>
           </div>
@@ -53,12 +52,12 @@
                 class="text-white hover:text-[#bba5d4] transition duration-300"
                 href="https://www.linkedin.com/in/martin-dobrudzhanski-9bb821137/"
                 target="_blank"
-                >My LinkedIn profile</a
+                >{{ $t('contact.linkedin') }}</a
               >
             </div>
           </div>
           <div class="flex mb-0 items-center">
-            <div class="p-2">
+            <div class="p-2" :style="socialStyles">
               <img
                 src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
                 alt="linkedin"
@@ -71,7 +70,7 @@
                 class="text-white hover:text-[#bba5d4] transition duration-300"
                 href="https://github.com/martinski74"
                 target="_blank"
-                >My GitHub profile</a
+                >{{ $t('contact.github') }}</a
               >
             </div>
           </div>
@@ -95,8 +94,10 @@
           data-aos="zoom-in-up"
         >
           <div class="mb-6">
-            <label for="email" class="text-white block mb-2 text-sm font-medium"
-              >Email</label
+            <label
+              for="email"
+              class="text-white block mb-2 text-sm font-medium"
+              >{{ $t('contact.email') }}</label
             >
             <input
               v-model="form.email"
@@ -104,7 +105,7 @@
               id="email"
               required
               class="bg-[#111827] placeholder:[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="email@gmail.com"
+              :placeholder="$t('contact.emailPlaceholder')"
               name="email"
             />
           </div>
@@ -112,7 +113,7 @@
             <label
               for="subject"
               class="text-white block mb-2 text-sm font-medium"
-              >Subject</label
+              >{{ $t('contact.subject') }}</label
             >
             <input
               v-model="form.subject"
@@ -120,7 +121,7 @@
               id="subject"
               required
               class="bg-[#111827] placeholder:[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="subject"
+              :placeholder="$t('contact.subjectPlaceholder')"
               name="subject"
             />
           </div>
@@ -128,27 +129,27 @@
             <label
               for="message"
               class="text-white block mb-2 text-sm font-medium"
-              >Message</label
+              >{{ $t('contact.message') }}</label
             >
             <textarea
               v-model="form.message"
               id="message"
               required
               class="bg-[#111827] placeholder:[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="Let's talk about ... "
+              :placeholder="$t('contact.messagePlaceholder')"
               name="message"
             ></textarea>
           </div>
           <div v-if="error" class="text-red-500 mb-4">{{ error }}</div>
           <div v-if="success" class="text-green-500 mb-4">
-            Your message has been sent successfully!
+            {{ $t('contact.success') }}
           </div>
           <button
             type="submit"
             :disabled="loading"
             class="z-1 w-[100%!important] px-6 md:px-7 py-3 rounded-full sm:w-max flex justify-center text-white bg-primary border-2 border-transparent disabled:opacity-50"
           >
-            {{ loading ? 'Sending...' : 'SEND' }}
+            {{ loading ? $t('contact.sending') : $t('contact.send') }}
           </button>
         </form>
       </div>
@@ -191,21 +192,23 @@ const sendEmail = async (e) => {
 
   try {
     await emailjs.send(
-      'service_r6w8kve', // Service ID от EmailJS
-      'template_noue6st', // Template ID от EmailJS
+      'service_r6w8kve',
+      'template_noue6st',
       {
         from_email: form.value.email,
         subject: form.value.subject,
         message: form.value.message,
       },
-      'lQUjj_qRZHVbU5cHu' // Public Key от EmailJS
+      'YOUR_PUBLIC_KEY'
     );
-
     success.value = true;
-    form.value = { email: '', subject: '', message: '' };
+    form.value = {
+      email: '',
+      subject: '',
+      message: '',
+    };
   } catch (err) {
-    error.value =
-      'Възникна грешка при изпращането на съобщението. Моля, опитайте отново.';
+    error.value = err.message;
   } finally {
     loading.value = false;
   }

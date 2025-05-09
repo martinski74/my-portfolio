@@ -10,7 +10,7 @@
     >
       <div data-aos="flip-right">
         <h2 class="text-4xl font-bold text-white text-left mb-8">
-          My Education
+          {{ $t('about.education') }}
         </h2>
         <div class="space-y-8 py-8">
           <div
@@ -41,22 +41,15 @@
         data-aos="flip-right"
       >
         <h2 class="text-4xl font-bold text-white md:text-center text-left mb-4">
-          More
+          {{ $t('about.more') }}
           <span
             class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
-            >About</span
+            >{{ $t('about.about') }}</span
           >
-          Me
+          {{ $t('about.me') }}
         </h2>
         <p class="text-base lg:text-lg mt-8 py-8">
-          "Hi, I'm a software developer passionate about creating clean and
-          efficient code that solves real-world problems. With 4+ years of
-          experience in front-end development, I specialize in building
-          user-friendly web applications using JavaScript, Vue.js, and React.
-          I've worked on projects ranging from MVPs for startups to enterprise
-          tools, always focusing on delivering a seamless user experience. In my
-          free time, I play sports, read technical literature, and travel :)
-          Check out my portfolio to see how I bring ideas to life through code!"
+          {{ $t('about.description') }}
         </p>
         <div class="grid grid-cols-3 gap-4 max-w-lg pt-8">
           <!-- <div
@@ -73,7 +66,7 @@
             <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">
               +10
             </h3>
-            <p class="text-sm sm:text-base text-gray-300">Project</p>
+            <p class="text-sm sm:text-base text-gray-300">{{ $t('about.projects') }}</p>
           </div>
 
           <div
@@ -82,7 +75,7 @@
             <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">
               +4
             </h3>
-            <p class="text-sm sm:text-base text-gray-300">Years Experience</p>
+            <p class="text-sm sm:text-base text-gray-300">{{ $t('about.experience') }}</p>
           </div>
         </div>
       </div>

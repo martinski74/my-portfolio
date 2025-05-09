@@ -19,7 +19,7 @@
             <h1
               class="pt-4 text-white font-bold text-4xl md:text-5xl lg:text-6xl"
             >
-              Hi, I'm
+              {{ $t('hero.greeting') }}
               <span
                 class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-pink-500"
               >
@@ -30,10 +30,7 @@
           <p
             class="text-gray-200 pt-8 text-center lg:text-left mx-auto max-w-xl"
           >
-            "I am actively seeking new opportunities to grow as a Web Developer.
-            Passionate about building modern, user-friendly applications, I aim
-            to contribute my skills while continuously learning and advancing in
-            this dynamic field."
+            {{ $t('hero.description') }}
           </p>
           <div
             class="flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max sm:mx-auto lg:mx-0"
@@ -47,7 +44,7 @@
               <span
                 @click="scrollToSection('#contact')"
                 class="relative flex items-center justify-center text-white"
-                >Hire Me</span
+                >{{ $t('hero.hireMe') }}</span
               >
             </button>
             <button
@@ -89,7 +86,7 @@
                   download="MartinDobr-2025.doc"
                   class="pl-2 text-primary"
                 >
-                  Download resume</a
+                  {{ $t('about.downloadCV') }}</a
                 >
               </div>
             </button>

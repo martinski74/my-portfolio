@@ -2,8 +2,9 @@
   <section class="text-white mt-20" id="projects">
     <div class="px-4 xl:pl-16">
       <div class="mb-4 md:flex md:justify-between xl:pr-16">
-        <h2 class="text-4xl font-bold text-white">My Latest Projects</h2>
-        <div class="flex space-x-4 mb-4 mt-5 md:mt-0"></div>
+        <h2 class="text-4xl font-bold text-white">
+          {{ $t('projects.title') }}
+        </h2>
       </div>
       <ul
         class="px-4 sm:py-16 xl:pr-16 grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
@@ -75,9 +76,11 @@
             class="text-white rounded-b-xl mt-3 bg-[#111a3e] shadow-lg border border-[#1f1641] py-6 px-4"
           >
             <h3 class="text-lg font-semibold uppercase lg:text-xl">
-              {{ project.title }}
+              {{ $t(`projects.${project.translationKey}.title`) }}
             </h3>
-            <p class="text-[#ADB7BE]">{{ project.description }}</p>
+            <p class="text-[#ADB7BE]">
+              {{ $t(`projects.${project.translationKey}.description`) }}
+            </p>
             <div class="flex flex-wrap p-2.5">
               <div
                 v-for="technology in project.technologies"
@@ -107,9 +110,7 @@ const Projects = ref([
     id: 1,
     category: 'web development',
     image: 'src/assets/chat-firebase.png',
-    title: 'Chat App',
-    description:
-      'A real-time chat application built with Vue.js 3 and Firebase. Features include user authentication, real-time messaging. Multiple users can log in together and chat with each other in real-time.',
+    translationKey: 'chatApp',
     technologies: ['vue.js 3', 'Firebase'],
     gitURL: 'https://github.com/martinski74/chat-firebas-vue',
     webURL: 'https://firechat-vue-86f94.firebaseapp.com/',
@@ -118,9 +119,7 @@ const Projects = ref([
     id: 2,
     category: 'web development',
     image: 'src/assets/food-react.png',
-    title: 'Food recipies ',
-    description:
-      'A comprehensive food recipe platform developed with React.js. Users can browse, search,create, edit, delete, recommend and save recipes. The application uses Express for the backend and MongoDB for data storage.',
+    translationKey: 'foodRecipes',
     technologies: ['React.js', 'Express', 'MongoDB'],
     gitURL: 'https://github.com/martinski74/food-recipes-react',
     webURL: 'https://food-recipes-client.netlify.app/',
@@ -129,9 +128,7 @@ const Projects = ref([
     id: 3,
     category: 'web development',
     image: 'src/assets/github.jpeg',
-    title: 'github search',
-    description:
-      'A GitHub user search application built with Vue.js 2. Users can search for GitHub profiles, view repositories, and get detailed information about GitHub users.',
+    translationKey: 'githubSearch',
     technologies: ['vue.js 2', 'vuex'],
     gitURL: 'https://github.com/martinski74/app-github-search',
     webURL: 'https://github-search-vue.netlify.app/',
@@ -140,9 +137,7 @@ const Projects = ref([
     id: 4,
     category: 'web development',
     image: 'src/assets/green.png',
-    title: 'Green blog',
-    description:
-      'A blog platform focused on environmental topics. Built with Vue.js 3 and Pinia for state management. Features include user authentication, create, edit, and delete blog posts functionality. Users can enjoy background music while browsing through the blog posts.',
+    translationKey: 'greenBlog',
     technologies: ['vue.js 3', 'Pinia', 'Express'],
     gitURL: 'https://github.com/martinski74/green-blog-vue',
     webURL: 'https://green-blog-vue.netlify.app/',
@@ -151,9 +146,7 @@ const Projects = ref([
     id: 5,
     category: 'js back-end',
     image: 'src/assets/movie.png',
-    title: 'magic movies',
-    description:
-      'A movie database application. Built with Express and Handlebars, featuring user authentication and movie recommendations. Users can create, edit, and delete their own movie lists.',
+    translationKey: 'magicMovies',
     technologies: ['MongoDB', 'Handlebars', 'Express'],
     gitURL: 'https://github.com/martinski74/magic-movies',
     webURL: 'https://magic-movies.up.railway.app/',
@@ -162,9 +155,7 @@ const Projects = ref([
     id: 6,
     category: 'Mobile App',
     image: 'src/assets/chat.png',
-    title: 'Funny chatbot',
-    description:
-      'A mobile application project showcasing responsive design and cross-platform compatibility. Features include user authentication and real-time data updates.',
+    translationKey: 'funnyChatbot',
     technologies: ['Vue.js', 'Express'],
     gitURL: 'https://github.com/martinski74/funny-chatbot',
     webURL: '',

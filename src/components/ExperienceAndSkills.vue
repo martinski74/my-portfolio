@@ -13,10 +13,10 @@
     >
       <div class="mt-4 md:mt-0 text-left flex flex-col z-10 h-full w-[80%]">
         <h2 class="text-4xl font-bold text-white text-left mb-4">
-          My
+          {{ $t('skills.my') }}
           <span
             class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
-            >Skills</span
+            >{{ $t('skills.skills') }}</span
           >
         </h2>
         <div class="mt-8" v-for="skill in Skills" :key="skill.id">
@@ -38,7 +38,7 @@
         <h2
           class="text-4xl font-bold text-white text-left mb-8 md:text-center md:mt-0 mt-8"
         >
-          My Experiences
+          {{ $t('skills.experience') }}
         </h2>
         <div class="space-y-8 py-8" data-aos="fade-left">
           <div
@@ -123,7 +123,7 @@ const Experinces = ref([
   {
     id: 3,
     role: 'Frontend Developer',
-    company: 'Next - IT Services ',
+    company: 'Next - IT Services',
     date: 'Sep 2020 - Jun 2021',
   },
   {
