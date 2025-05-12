@@ -51,11 +51,11 @@
     },
     "magicMovies": {
       "title": "Magic movies",
-      "description": "A movie database application. Built with Express and Handlebars, featuring user authentication and movie recommendations. Users can create, edit, and delete their own movie lists."
+      "description": "A movie database application. This is the completion of the assignment from my JS Back-end exam :) Built with Express and Handlebars, featuring user authentication and movie recommendations. Users can create, edit, and delete their own movie lists."
     },
     "funnyChatbot": {
       "title": "Funny chatbot",
-      "description": "A mobile application project showcasing responsive design and cross-platform compatibility. Features include user authentication and real-time data updates."
+      "description": "A chatbot built with Vue.js and Node.js. It uses the OpenAI API to generate answers to questions. Users can ask questions and get fun answers in real time."
     }
   },
   "contact": {
@@ -79,4 +79,4 @@
     "rights": "All rights reserved",
     "madeWith": "Made with"
   }
-} 
+}

@@ -158,7 +158,7 @@ const Projects = ref([
     translationKey: 'funnyChatbot',
     technologies: ['Vue.js', 'Express'],
     gitURL: 'https://github.com/martinski74/funny-chatbot',
-    webURL: '',
+    webURL: 'https://funny-chatbot.netlify.app',
   },
 ]);
 </script>
