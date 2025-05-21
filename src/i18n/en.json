@@ -45,9 +45,9 @@
       "title": "GitHub search",
       "description": "A GitHub user search application built with Vue.js 2. Users can search for GitHub profiles, view repositories, and get detailed information about GitHub users."
     },
-    "greenBlog": {
-      "title": "Green blog",
-      "description": "A blog platform focused on environmental topics. Built with Vue.js 3 and Pinia for state management. Features include user authentication, create, edit, and delete blog posts functionality. Users can enjoy background music while browsing through the blog posts."
+    "textToSpeech": {
+      "title": "Text to speech",
+      "description": "A simple application that converts text you enter into voice. It is build with JavaScript/HTML/CSS and uses the Web Speech API. Users can enter text and listen to it being read aloud."
     },
     "magicMovies": {
       "title": "Magic movies",

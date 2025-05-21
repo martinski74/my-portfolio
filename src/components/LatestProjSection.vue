@@ -136,11 +136,11 @@ const Projects = ref([
   {
     id: 4,
     category: 'web development',
-    image: 'src/assets/green.png',
-    translationKey: 'greenBlog',
-    technologies: ['vue.js 3', 'Pinia', 'Express'],
-    gitURL: 'https://github.com/martinski74/green-blog-vue',
-    webURL: 'https://green-blog-vue.netlify.app/',
+    image: 'src/assets/speechToText.png',
+    translationKey: 'textToSpeech',
+    technologies: ['JavaScript', 'HTML', 'CSS'],
+    gitURL: 'https://github.com/martinski74/text-to-speech',
+    webURL: '',
   },
   {
     id: 5,
