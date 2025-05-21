@@ -6,4 +6,4 @@ Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://
 
 ### App Demo:  <a href="https://vue-my-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">🔗 Моето портфолио</a>
 
-[Portfolio ](https://vue-my-portfolio.netlify.app/){:target="_blank"}
+
