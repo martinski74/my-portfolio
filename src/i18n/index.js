@@ -1,6 +1,6 @@
-import { createI18n } from 'vue-i18n'
-import en from './en.json'
-import bg from './bg.json'
+import { createI18n } from 'vue-i18n';
+import en from './en.json';
+import bg from './bg.json';
 
 const i18n = createI18n({
   legacy: false,
@@ -8,8 +8,8 @@ const i18n = createI18n({
   fallbackLocale: 'en',
   messages: {
     en,
-    bg
-  }
-})
+    bg,
+  },
+});
 
-export default i18n 
+export default i18n;

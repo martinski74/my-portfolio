@@ -9,5 +9,14 @@ export default defineConfig({
     alias:{
       '@':fileURLToPath(new URL("./src",import.meta.url))
     }
-  }
+  },
+  build: {
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name]-[hash][extname]'
+      }
+    }
+  },
+  publicDir: 'public'
 })

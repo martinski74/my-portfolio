@@ -51,17 +51,23 @@
           </a>
         </li>
         <li class="flex space-x-2">
-          <button 
-            @click="changeLanguage('en')" 
+          <button
+            @click="changeLanguage('en')"
             class="px-4 py-2 rounded text-white transition-colors hover:bg-[#7332c6]"
-            :class="{ 'bg-[#7332c6]': currentLocale === 'en', 'bg-[#ad79ee]': currentLocale !== 'en' }"
+            :class="{
+              'bg-[#7332c6]': currentLocale === 'en',
+              'bg-[#ad79ee]': currentLocale !== 'en',
+            }"
           >
             EN
           </button>
-          <button 
-            @click="changeLanguage('bg')" 
+          <button
+            @click="changeLanguage('bg')"
             class="px-4 py-2 rounded text-white transition-colors hover:bg-[#7332c6]"
-            :class="{ 'bg-[#7332c6]': currentLocale === 'bg', 'bg-[#ad79ee]': currentLocale !== 'bg' }"
+            :class="{
+              'bg-[#7332c6]': currentLocale === 'bg',
+              'bg-[#ad79ee]': currentLocale !== 'bg',
+            }"
           >
             BG
           </button>

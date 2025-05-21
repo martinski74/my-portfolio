@@ -66,7 +66,9 @@
             <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">
               +10
             </h3>
-            <p class="text-sm sm:text-base text-gray-300">{{ $t('about.projects') }}</p>
+            <p class="text-sm sm:text-base text-gray-300">
+              {{ $t('about.projects') }}
+            </p>
           </div>
 
           <div
@@ -75,7 +77,9 @@
             <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">
               +4
             </h3>
-            <p class="text-sm sm:text-base text-gray-300">{{ $t('about.experience') }}</p>
+            <p class="text-sm sm:text-base text-gray-300">
+              {{ $t('about.experience') }}
+            </p>
           </div>
         </div>
       </div>
@@ -84,6 +88,8 @@
 </template>
 <script setup>
 import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n();
 const education = ref([
   {
     id: 1,

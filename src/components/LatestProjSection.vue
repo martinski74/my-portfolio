@@ -12,10 +12,9 @@
       >
         <li v-for="project in Projects" :key="project.id">
           <div
-            class="h-52 md:h-[24rem] rounded-t-xl relative group"
+            class="h-52 md:h-[24rem] rounded-t-xl relative group bg-cover bg-center"
             :style="{
-              backgroundImage: `url(/${project.image})`,
-              backgroundSize: 'cover',
+              backgroundImage: `url(${project.image})`
             }"
           >
             <div
@@ -104,12 +103,18 @@
 </template>
 <script setup>
 import { ref, computed } from 'vue';
+import chatFirebaseImg from '@/assets/chat-firebase.png';
+import foodReactImg from '@/assets/food-react.png';
+import githubImg from '@/assets/github.jpeg';
+import speechToTextImg from '@/assets/speechToText.png';
+import movieImg from '@/assets/movie.png';
+import chatImg from '@/assets/chat.png';
 
 const Projects = ref([
   {
     id: 1,
     category: 'web development',
-    image: 'src/assets/chat-firebase.png',
+    image: chatFirebaseImg,
     translationKey: 'chatApp',
     technologies: ['vue.js 3', 'Firebase'],
     gitURL: 'https://github.com/martinski74/chat-firebas-vue',
@@ -118,7 +123,7 @@ const Projects = ref([
   {
     id: 2,
     category: 'web development',
-    image: 'src/assets/food-react.png',
+    image: foodReactImg,
     translationKey: 'foodRecipes',
     technologies: ['React.js', 'Express', 'MongoDB'],
     gitURL: 'https://github.com/martinski74/food-recipes-react',
@@ -127,7 +132,7 @@ const Projects = ref([
   {
     id: 3,
     category: 'web development',
-    image: 'src/assets/github.jpeg',
+    image: githubImg,
     translationKey: 'githubSearch',
     technologies: ['vue.js 2', 'vuex'],
     gitURL: 'https://github.com/martinski74/app-github-search',
@@ -136,7 +141,7 @@ const Projects = ref([
   {
     id: 4,
     category: 'web development',
-    image: 'src/assets/speechToText.png',
+    image: speechToTextImg,
     translationKey: 'textToSpeech',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     gitURL: 'https://github.com/martinski74/text-to-speech',
@@ -145,7 +150,7 @@ const Projects = ref([
   {
     id: 5,
     category: 'js back-end',
-    image: 'src/assets/movie.png',
+    image: movieImg,
     translationKey: 'magicMovies',
     technologies: ['MongoDB', 'Handlebars', 'Express'],
     gitURL: 'https://github.com/martinski74/magic-movies',
@@ -154,7 +159,7 @@ const Projects = ref([
   {
     id: 6,
     category: 'Mobile App',
-    image: 'src/assets/chat.png',
+    image: chatImg,
     translationKey: 'funnyChatbot',
     technologies: ['Vue.js', 'Express'],
     gitURL: 'https://github.com/martinski74/funny-chatbot',
