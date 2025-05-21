@@ -105,7 +105,7 @@
               id="email"
               required
               class="bg-[#111827] placeholder:[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              :placeholder="$t('contact.emailPlaceholder')"
+              placeholder="email@gmail.com"
               name="email"
             />
           </div>

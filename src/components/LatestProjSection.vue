@@ -14,7 +14,7 @@
           <div
             class="h-52 md:h-[24rem] rounded-t-xl relative group"
             :style="{
-              backgroundImage: 'url(' + project.image + ')',
+              backgroundImage: `url(/${project.image})`,
               backgroundSize: 'cover',
             }"
           >
