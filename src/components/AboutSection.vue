@@ -52,14 +52,6 @@
           {{ $t('about.description') }}
         </p>
         <div class="grid grid-cols-3 gap-4 max-w-lg pt-8">
-          <!-- <div
-            class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3"
-          >
-            <h3 class="text-white font-bold text-xl sm:text-2xl lg:text-3xl">
-              +200
-            </h3>
-            <p class="text-sm sm:text-base text-gray-300">Happy Client</p>
-          </div> -->
           <div
             class="text-center rounded-xl bg-[#111a3e] shadow-lg border border-[#1f1641] p-3"
           >
@@ -95,7 +87,7 @@ const education = ref([
     id: 1,
     School: 'SoftUni',
     program: 'JS Web Developer',
-    year: '2016 - 2017',
+    year: '2015 - 2017',
   },
   {
     id: 2,

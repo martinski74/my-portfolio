@@ -14,7 +14,7 @@
           <div
             class="h-52 md:h-[24rem] rounded-t-xl relative group bg-cover bg-center"
             :style="{
-              backgroundImage: `url(${project.image})`
+              backgroundImage: `url(${project.image})`,
             }"
           >
             <div
@@ -145,7 +145,7 @@ const Projects = ref([
     translationKey: 'textToSpeech',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     gitURL: 'https://github.com/martinski74/text-to-speech',
-    webURL: '',
+    webURL: 'https://text-to-speach-app.netlify.app/',
   },
   {
     id: 5,

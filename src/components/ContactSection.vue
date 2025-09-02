@@ -199,7 +199,7 @@ const sendEmail = async (e) => {
         subject: form.value.subject,
         message: form.value.message,
       },
-      'YOUR_PUBLIC_KEY'
+      { publicKey: 'lQUjj_qRZHVbU5cHu' }
     );
     success.value = true;
     form.value = {
