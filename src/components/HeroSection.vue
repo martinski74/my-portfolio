@@ -82,8 +82,8 @@
                   <div class="download-loader text-white hidden"></div>
                 </div>
                 <a
-                  href="/MartinDobr-2025.pdf"
-                  download="MartinDobr-2025.pdf"
+                  href="/Martin-Dobrudzhanski-CV.pdf"
+                  download="Martin-Dobrudzhanski-CV.pdf"
                   class="pl-2 text-primary"
                 >
                   {{ $t('about.downloadCV') }}</a

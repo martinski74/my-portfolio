@@ -73,17 +73,17 @@ const Skills = ref([
   {
     id: 1,
     name: 'HTmL & CSS',
-    width: '95%',
+    width: '100%',
   },
   {
     id: 2,
     name: 'JavaScript',
-    width: '90%',
+    width: '95%',
   },
   {
     id: 3,
     name: 'Vue.js',
-    width: '90%',
+    width: '95%',
   },
   {
     id: 4,
@@ -112,7 +112,7 @@ const Experinces = ref([
     id: 1,
     role: 'Frontend Developer',
     company: 'TBI Bank EOD',
-    date: 'Oct 2023 - May 2024',
+    date: 'Oct 2023 - Dec 2024',
   },
   {
     id: 2,
