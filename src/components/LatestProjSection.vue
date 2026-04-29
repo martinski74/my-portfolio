@@ -156,14 +156,5 @@ const Projects = ref([
     gitURL: 'https://github.com/martinski74/magic-movies',
     webURL: 'https://magic-movies.up.railway.app/',
   },
-  {
-    id: 6,
-    category: 'Mobile App',
-    image: chatImg,
-    translationKey: 'funnyChatbot',
-    technologies: ['Vue.js', 'Express'],
-    gitURL: 'https://github.com/martinski74/funny-chatbot',
-    webURL: 'https://funny-chatbot.netlify.app',
-  },
 ]);
 </script>
