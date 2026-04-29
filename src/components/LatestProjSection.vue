@@ -108,7 +108,6 @@ import foodReactImg from '@/assets/food-react.png';
 import githubImg from '@/assets/github.jpeg';
 import speechToTextImg from '@/assets/speechToText.png';
 import movieImg from '@/assets/movie.png';
-import chatImg from '@/assets/chat.png';
 
 const Projects = ref([
   {
