@@ -48,6 +48,10 @@
     "qrGenerator": {
       "title": "QR Code Generator",
       "description": "Generate QR codes instantly from any text, URL, or contact info."
+    },
+    "textToSpeach": {
+      "title": "Text to Speach ",
+      "description": "A web application that transforms entered text into speech directly in the browser, without a server or installation."
     }
     
   },

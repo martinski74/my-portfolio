@@ -106,7 +106,8 @@ import { ref, computed } from 'vue';
 import chatFirebaseImg from '@/assets/chat-firebase.png';
 import foodReactImg from '@/assets/food-react.png';
 import githubImg from '@/assets/github.jpeg';
-import qrGgen from '@/assets/qr-gen.png'
+import qrGgen from '@/assets/qr-gen.png';
+import textToSpeach from '@/assets/textToSpeach.png';
 const Projects = ref([
   {
     id: 1,
@@ -144,5 +145,14 @@ const Projects = ref([
     gitURL: 'https://github.com/martinski74/qr-code-generator',
     webURL: 'https://qr-code-gene-app.netlify.app/',
   },
+  {
+    id: 5,
+    category: 'web development',
+    image: textToSpeach,
+    translationKey: 'textToSpeach',
+    technologies: ['Vue.js','Vite'],
+    gitURL: 'https://github.com/martinski74/text-to-speach',
+    webURL: 'https://text-to-speach-app.netlify.app',
+  }
 ]);
 </script>
