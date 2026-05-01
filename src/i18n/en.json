@@ -45,18 +45,11 @@
       "title": "GitHub search",
       "description": "A GitHub user search application built with Vue.js 2. Users can search for GitHub profiles, view repositories, and get detailed information about GitHub users."
     },
-    "textToSpeech": {
-      "title": "Text to speech",
-      "description": "A simple application that converts text you enter into voice. It is build with JavaScript/HTML/CSS and uses the Web Speech API. Users can enter text and listen to it being read aloud."
-    },
-    "magicMovies": {
-      "title": "Magic movies",
-      "description": "A movie database application. This is the completion of the assignment from my JS Back-end exam :) Built with Express and Handlebars, featuring user authentication and movie recommendations. Users can create, edit, and delete their own movie lists."
-    },
-    "funnyChatbot": {
-      "title": "Funny chatbot",
-      "description": "A chatbot built with Vue.js and Node.js. It uses the OpenAI API to generate answers to questions. Users can ask questions and get fun answers in real time."
+    "qrGenerator": {
+      "title": "QR Code Generator",
+      "description": "Generate QR codes instantly from any text, URL, or contact info."
     }
+    
   },
   "contact": {
     "title": "Let's Connect",

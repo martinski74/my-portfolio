@@ -106,9 +106,7 @@ import { ref, computed } from 'vue';
 import chatFirebaseImg from '@/assets/chat-firebase.png';
 import foodReactImg from '@/assets/food-react.png';
 import githubImg from '@/assets/github.jpeg';
-import speechToTextImg from '@/assets/speechToText.png';
-import movieImg from '@/assets/movie.png';
-
+import qrGgen from '@/assets/qr-gen.png'
 const Projects = ref([
   {
     id: 1,
@@ -137,23 +135,14 @@ const Projects = ref([
     gitURL: 'https://github.com/martinski74/app-github-search',
     webURL: 'https://github-search-vue.netlify.app/',
   },
-  {
+   {
     id: 4,
     category: 'web development',
-    image: speechToTextImg,
-    translationKey: 'textToSpeech',
-    technologies: ['JavaScript', 'HTML', 'CSS'],
-    gitURL: 'https://github.com/martinski74/text-to-speech',
-    webURL: 'https://text-to-speach-app.netlify.app/',
-  },
-  {
-    id: 5,
-    category: 'js back-end',
-    image: movieImg,
-    translationKey: 'magicMovies',
-    technologies: ['MongoDB', 'Handlebars', 'Express'],
-    gitURL: 'https://github.com/martinski74/magic-movies',
-    webURL: 'https://magic-movies.up.railway.app/',
+    image: qrGgen,
+    translationKey: 'qrGenerator',
+    technologies: ['vue.js 3'],
+    gitURL: 'https://github.com/martinski74/qr-code-generator',
+    webURL: 'https://qr-code-gene-app.netlify.app/',
   },
 ]);
 </script>
