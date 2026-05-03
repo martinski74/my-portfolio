@@ -1,0 +1,6 @@
+name = "my_portfolio"
+main = "dist/index.html"
+compatibility_date = "2026-05-03"
+
+[site]
+bucket = "./dist"
