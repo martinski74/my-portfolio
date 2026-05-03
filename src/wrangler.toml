@@ -1,4 +1,4 @@
-name = "my_portfolio"
+name = "my-portfolio"
 main = "dist/index.html"
 compatibility_date = "2026-05-03"
 
